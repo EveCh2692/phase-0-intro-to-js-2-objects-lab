@@ -4,5 +4,5 @@ const employee= {
 }
 
 const updatedEmployeeWithKeyAndValue = function(employee, key, value){
-    const updatedEmployeeWithKeyAndValue = [...employee, newValue]
+    return { ...employee, ...{[key]:value}}
 }
